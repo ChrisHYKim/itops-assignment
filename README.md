@@ -21,4 +21,5 @@ Oracle 데이터베이스를 사용하여 이슈 데이터를 저장하고 관�
 ### SQL 쿼리 문제 해결
 * 제공된 `FMS_HBL_MST` 및 `FMS_HBL_CNTR` 테이블 데이터를 기반으로 한 SQL 쿼리 문제 해결.
 ## ✨ 프로젝트 구조 (구현된 프로젝트)
-/home/chris/Pictures/Screenshots/Screenshot From 2025-06-15 18-47-17.png
+
+![alt text](<Screenshot From 2025-06-15 18-47-17.png>)
