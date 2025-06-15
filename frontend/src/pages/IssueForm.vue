@@ -9,6 +9,18 @@
   TODO: 이 컴포넌트를 재사용 가능하게 설계해보세요.
   - 같은 폼 구조와 로직을 재사용하여 코드 중복을 방지하세요.
 */
+const props = defineProps ({
+  issueId: {
+    type: Number,
+    required: false,
+  },
+  isCreate: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const route = useRoute()
 export default {
   name: 'IssueForm',
 }

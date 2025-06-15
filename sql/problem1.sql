@@ -7,3 +7,18 @@
 -- 6. 정렬: CNTR_COUNT DESC, ETD ASC
 
 -- 여기에 SQL 쿼리를 작성하세요
+-- 1. MST_HBL_NO 항목을 선택 후, 갯수만큼 테이블 출력
+-- 2. CNTR 테아블과 JOIN 진행 후, 내림차순을 진행한 후, ETD 빠른순으로 진행한다.
+SELECT 
+    MST_HBL_NO,
+    COUNT(CNTR.CNTR_NO) AS CNTR_COUNT,
+    MST.ETD
+FROM 
+    FMS_HBL_MST
+JOIN FMS_HBL_CNTR CNTR ON MST.HBL_NO = CNTR.HBL_NO
+GROUP BY
+    MST.HBL_NO, MST.ETD 
+ORDER BY
+    COUNT(CNTR.CNTR_NO) DESC
+    MST.ETD ASC
+FETCH FIRST 1 ROW ONLY;
